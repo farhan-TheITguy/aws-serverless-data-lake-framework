@@ -178,6 +178,10 @@ Resources:
                   - iam:ListPolicyVersions
                   - iam:ListRoles
                   - iam:ListRolePolicies
+                  - iam:CreateRole
+                  - iam:DeleteRole
+                  - iam:PutRolePolicy
+                  - iam:DeleteRolePolicy
               - Resource: !Sub arn:aws:iam::${pSharedDevOpsAccountId}:role/sdlf-cicd-team-codecommit-${pEnvironment}-*
                 Effect: Allow
                 Action: iam:PassRole
